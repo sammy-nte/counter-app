@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    background: rgb(32, 126, 131);
+    width: 50%;
+}
+
+#operations-container{
+    background: teal;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: column;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#output{
+    font-size: 1.5em;
+}
+
+#decrease,
+#increase{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+.buttons{
+    width: inherit;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+#reset,
+#options-no,
+#options-yes{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    margin: 0 0 3px 0;
+}
+
+#warning{
+    border: 3px solid red;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    color: white;
+    text-align: center;
+}
+
+#options-span{
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    #decrease,
+    #increase{
+        width: 40px;
+        height: 40px;
+    }
+
+    #reset{
+        height: fit-content;
+        width: 50%;
+    }
+}
